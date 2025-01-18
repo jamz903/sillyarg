@@ -26,3 +26,5 @@ When it comes to perfumes, deciding what notes matter the most to you affects yo
 
 3. AI Integration
 We integrated Gemini to retrieve the Top 5 most popular scents that matches the specified notes and fragrance qualities of the perfume selected.
+
+(NOTE: You will have to connect your own MONGODB_URI and API_KEY in an env file.)
