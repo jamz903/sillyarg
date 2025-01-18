@@ -24,7 +24,7 @@ function App() {
           <h1 className="text-5xl font-bold mb-6 text-gray-800">Welcome to SillyArg</h1>
           <p className="text-xl text-gray-600 mb-8">
             A playful take on "sillage" - the trail of scent left in the air by perfume. 
-            Just as fragrance leaves an impression, we help you leave your mark.
+            We're here to help you find your next signature scent!
           </p>
           <button 
             className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105"
