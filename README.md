@@ -5,13 +5,15 @@ Hi! Welcome to our Hack & Roll 2025 Submission.
 Run our project by using the following commands:
 ```
 cd backend
+poetry install --no-root
 poetry run uvicorn app.main:app --reload
 ```
 ```
 cd frontend
+npm install
 npm run dev
 ```
-Do remember to run these in separate terminals. You will then be able to access our Vite + React application :)
+Do remember to run these in separate terminals, and we require Python 3.13. You will then be able to access our Vite + React application :)
 
 <h1>What Our App Is All About</h1>
 SillyArg is a play on the word "Sillage," the trail of scent left in the air by perfume. The two of us often struggle to figure out what scents we like beyond the common ones found in stores like Sephora. So, we decided to create an app that helps people shortlist the top 5 related scents to those that can be commonly found.
