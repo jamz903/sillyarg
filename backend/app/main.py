@@ -8,6 +8,7 @@ from fastapi import FastAPI, HTTPException
 from motor.motor_asyncio import AsyncIOMotorClient
 from dotenv import load_dotenv
 from bson import json_util
+from pydantic import BaseModel
 
 
 load_dotenv()
@@ -43,12 +44,20 @@ model = genai.GenerativeModel(
 
 app = FastAPI()
 
+class PromptRequest(BaseModel):
+    name: str
+    scents: str
+    notes: str
+
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
 
 @app.post("/prompt")
-async def get_prompt(name: str, scents: str, notes: str):
+async def get_prompt(request: PromptRequest):
+    name = request.name
+    scents = request.scents
+    notes = request.notes
     # Assuming you have a function `prompt_model` that takes a scent and returns a response
     response = prompt_model(name, scents, notes)
     return {"message": response}
