@@ -14,7 +14,7 @@ MONGODB_URL = os.getenv('MONGODB_URL')
 DATABASE_NAME = 'fragrance_db'
 COLLECTION_NAME ="products"
 
-file_path ="scraper\product_data.json"
+file_path ="product_data.json"
 
 import json
 
